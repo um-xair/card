@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-cyan-200 flex justify-center items-center min-h-screen">
+    <div class="relative w-[500px] h-[500px] rounded-[30px] overflow-hidden shadow-xl transition-transform duration-500 hover:scale-105 cursor-pointer group">
+        <div class="absolute inset-0 z-20 bg-black transition-transform duration-500 transform group-hover:-translate-y-20">
+            <img src="https://i.pinimg.com/736x/d5/03/d5/d503d5f4517b9c44faab789bff503e32.jpg" alt="profile one" class="w-full h-full object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-40">
+        </div>
+        <ul class="absolute inset-0 flex items-center justify-center z-30 space-x-4 transform translate-y-40 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+            <li><a href="#" class="w-12 h-12 bg-white text-gray-900 flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-gray-900 hover:text-white"><i class="fab fa-facebook-f text-2xl"></i></a></li>
+            <li><a href="#" class="w-12 h-12 bg-white text-gray-900 flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-gray-900 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a></li>
+            <li><a href="#" class="w-12 h-12 bg-white text-gray-900 flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-gray-900 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a></li>
+            <li><a href="#" class="w-12 h-12 bg-white text-gray-900 flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-gray-900 hover:text-white"><i class="fab fa-github text-2xl"></i></a></li>
+        </ul>
+        <div class="absolute bottom-0 left-0 w-full bg-white p-4 z-10 transform translate-y-20 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+            <h2 class="text-xl font-semibold ml-4">DEVXAIR</h2>
+            <p class="text-gray-600 text-sm ml-4">Front End Developer</p>
+        </div>
+    </div>
+</body>
+</html>

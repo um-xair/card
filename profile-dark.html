@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Dark Light Mode Profile Card</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background: linear-gradient(to bottom right, #1e3a8a, #000000, #1e3a8a);
+            color: #e5e7eb;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            padding: 2rem;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode .profile-card {
+            background: linear-gradient(to bottom right, #1e3a8a, #000000, #1e3a8a);
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .profile-card h2, .profile-card h4, .profile-card p {
+            margin: 0.5rem 0;
+        }
+        .hire-me-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #6b46c1, #000000, #2b6cb0);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 9999px;
+            margin: 1rem 0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .hire-me-btn:hover {
+            background: linear-gradient(to right, #5a3aa7, #000000, #1e4a8d);
+        }
+        body.dark-mode .hire-me-btn {
+            background: linear-gradient(to right, #2b6cb0, #000000, #6b46c1);
+        }
+        body.dark-mode .hire-me-btn:hover {
+            background: linear-gradient(to right, #1e4a8d, #000000, #5a3aa7);
+        }
+        .social-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+        .social-links div {
+            text-align: center;
+        }
+        .social-links i {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .social-links p {
+            font-size: 0.875rem;
+            margin: 0;
+        }
+        .social-links p, .social-links small {
+            text-decoration: none;
+            color: inherit;
+        }
+        .theme-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #333;
+            transition: color 0.3s;
+        }
+        body.dark-mode .theme-icon {
+            color: #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="theme-icon" id="theme-icon" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </div>
+        <img src="https://i.pinimg.com/control/564x/f3/84/8f/f3848fe970658d9b0ebdaba7c36cd49b.jpg" alt="Profile Picture">
+        <h2>DEVXAIR</h2>
+        <h4>Front End Developer</h4>
+        <p>Experienced in front-end and back-end development, creating stunning and functional web experiences.</p>
+        <a href="#" class="hire-me-btn">Hire Me</a>
+        <div class="social-links">
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <p>500</p>
+                <small>Follower</small>
+            </div>
+            <div>
+                <i class="fab fa-instagram"></i>
+                <p>300</p>
+                <small>Follower</small>
+            </div>
+            <div>
+                <i class="fab fa-tiktok"></i>
+                <p>1.2K</p>
+                <small>Follower</small>
+            </div>
+            <div>
+                <i class="fab fa-github"></i>
+                <p>900</p>
+                <small>Follower</small>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon').querySelector('i');
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+    </script>
+</body>
+</html>

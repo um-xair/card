@@ -1,11 +1,33 @@
-# 🧬 A Responsive Travel Site Developed Using HTML and Tailwind CSS, Focusing on a Clean UI/UX Design | by UM-XAIR
+# 🧬 Take your web projects to the next level with DEVXAIR's free card tools, perfect for front-end developers and other tech enthusiasts
 
 <div align="center">
-  <img src="https://github.com/um-xair/Estate-Website/blob/c9dc4a2739039080fd449247058b711d2682bf84/assets/estate-web.jpg" />
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/card-tool.jpg" />
 </div>
 
 ## Website Description
-Our estate website offers a sleek and user-friendly design, making property hunting a breeze. With a focus on clean UI/UX, the site highlights top real estate listings, offers expert advice, and provides seamless navigation to help you find your dream home. Start your property journey here! 
+Welcome to DEVXAIR Card Tools, your ultimate destination for enhancing web projects with stunning visuals! DEVXAIR platform offers developers diverse card templates. Whether you're building a personal portfolio, a business website, or an interactive application, our tools empower you to create visually appealing content effortlessly.
+
+## Card Preview
+### Black and White Login
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/login-1.jpg" />
+</div>
+
+### Dark Gradient Login Card
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/login-2.jpg" />
+</div>
+
+### Border Gradient Login Card
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/login-3.jpg" />
+</div>
+
+### Login Register Slider Card
+<video autoplay loop muted class="w-full max-w-md">
+    <source src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/register-vd.MP4">
+    Your browser does not support the video tag.
+</video>
 
 ## Technologies Used
 This project utilizes **HTML**, **CSS**, and **Tailwind CSS** for styling, ensuring a responsive and modern design. The icons below represent the technologies used:
@@ -17,7 +39,7 @@ This project utilizes **HTML**, **CSS**, and **Tailwind CSS** for styling, ensur
 </div>
 
 ## View the Full Project
-Check out the full project on [Behance](https://www.behance.net/gallery/210231235/Travel-Sphere-Website-Design-UIUX) to explore the complete design and implementation details.
+Check out the full project on [DEVXAIR Portfolio](https://devxair.netlify.app/project) to explore the complete design and implementation details.
 
 ## Collaborate With Me
 If you're interested in collaborating or have any inquiries, feel free to reach out via email or WhatsApp!

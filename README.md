@@ -1,7 +1,7 @@
 # 🧬 A Responsive Travel Site Developed Using HTML and Tailwind CSS, Focusing on a Clean UI/UX Design | by UM-XAIR
 
 <div align="center">
-  <img src="https://github.com/um-xair/Estate-Website/blob/c9dc4a2739039080fd449247058b711d2682bf84/assets/estate-web.jpg" />
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/card-tool.jpg" />
 </div>
 
 ## Website Description

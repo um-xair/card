@@ -1,11 +1,12 @@
-# 🧬 A Responsive Travel Site Developed Using HTML and Tailwind CSS, Focusing on a Clean UI/UX Design | by UM-XAIR
+# 🧬 Take your web projects to the next level with DEVXAIR's free card tools, perfect for front-end developers and other tech enthusiasts
 
 <div align="center">
   <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/card-tool.jpg" />
 </div>
 
 ## Website Description
-Our estate website offers a sleek and user-friendly design, making property hunting a breeze. With a focus on clean UI/UX, the site highlights top real estate listings, offers expert advice, and provides seamless navigation to help you find your dream home. Start your property journey here! 
+Welcome to DEVXAIR Card Tools, your ultimate destination for enhancing web projects with stunning visuals! DEVXAIR platform offers developers diverse card templates. Whether you're building a personal portfolio, a business website, or an interactive application, our tools empower you to create visually appealing content effortlessly.
+
 
 ## Technologies Used
 This project utilizes **HTML**, **CSS**, and **Tailwind CSS** for styling, ensuring a responsive and modern design. The icons below represent the technologies used:
@@ -17,7 +18,7 @@ This project utilizes **HTML**, **CSS**, and **Tailwind CSS** for styling, ensur
 </div>
 
 ## View the Full Project
-Check out the full project on [Behance](https://www.behance.net/gallery/210231235/Travel-Sphere-Website-Design-UIUX) to explore the complete design and implementation details.
+Check out the full project on [DEVXAIR Portfolio](https://devxair.netlify.app/project) to explore the complete design and implementation details.
 
 ## Collaborate With Me
 If you're interested in collaborating or have any inquiries, feel free to reach out via email or WhatsApp!

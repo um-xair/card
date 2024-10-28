@@ -7,6 +7,27 @@
 ## Website Description
 Welcome to DEVXAIR Card Tools, your ultimate destination for enhancing web projects with stunning visuals! DEVXAIR platform offers developers diverse card templates. Whether you're building a personal portfolio, a business website, or an interactive application, our tools empower you to create visually appealing content effortlessly.
 
+## Card Preview
+### Black and White Login
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/login-1.jpg" />
+</div>
+
+### Dark Gradient Login Card
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/login-2.jpg" />
+</div>
+
+### Border Gradient Login Card
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/login-3.jpg" />
+</div>
+
+### Login Register Slider Card
+<video autoplay loop muted class="w-full max-w-md">
+    <source src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/register-vd.MP4">
+    Your browser does not support the video tag.
+</video>
 
 ## Technologies Used
 This project utilizes **HTML**, **CSS**, and **Tailwind CSS** for styling, ensuring a responsive and modern design. The icons below represent the technologies used:

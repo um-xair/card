@@ -24,10 +24,29 @@ Welcome to DEVXAIR Card Tools, your ultimate destination for enhancing web proje
 </div>
 
 ### Login Register Slider Card
-<video autoplay loop muted class="w-full max-w-md">
-    <source src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/register-vd.MP4">
-    Your browser does not support the video tag.
-</video>
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/Login%20Register%20Slider%20Card.jpg" />
+</div>
+
+### Login Register Card
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/Login%20Register%20Card.jpg" />
+</div>
+
+### Profile Card Hover Flip
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/Profile%20Card%20Hover%20Flip.jpg" />
+</div>
+
+### Dark/Light Mode Profile
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/DarkLight%20Mode%20Profile.jpg" />
+</div>
+
+### Profile Hover Card
+<div align="center">
+  <img src="https://github.com/um-xair/Card-tool-template/blob/main/main-photo/Profile%20Hover%20Card.jpg" />
+</div>
 
 ## Technologies Used
 This project utilizes **HTML**, **CSS**, and **Tailwind CSS** for styling, ensuring a responsive and modern design. The icons below represent the technologies used:

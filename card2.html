@@ -13,9 +13,9 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to top right, #6a1b9a, #0A0A0A, #1e3a8a);
+            background: linear-gradient(to top right, #6a1b9a, rgb(33, 33, 33), #1e3a8a);
             background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            animation: gradient 10s ease infinite;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -31,6 +31,9 @@
             100% {
                 background-position: 0% 50%;
             }
+        }
+        .shadow-glow {
+            box-shadow: 0 4px 30px rgb(255, 255, 255), 0 0 60px rgba(0, 0, 0, 0);
         }
     </style>
 </head>
@@ -66,7 +69,7 @@
                     </div>
                 </div>
                 
-                <button type="submit" class="w-full bg-black text-white py-4 rounded-full mb-6">Login</button>
+                <button type="submit" class="w-full bg-[#6a1b9a] text-white py-4 rounded-full mb-6">Login</button>
                 <div class="flex items-center justify-center mb-6">
                     <hr class="border-gray-300 flex-grow">
                     <span class="mx-2 text-white">or</span>
@@ -75,17 +78,17 @@
                 <div class="flex justify-center mb-6">
                     <div class="grid grid-cols-3 gap-4">
                         <button class="w-12 h-12 rounded-full p-2 flex justify-center items-center bg-gray-100">
-                            <i class="fab fa-google text-red-500 text-2xl"></i>
+                            <i class="fab fa-google text-2xl"></i>
                         </button>
                         <button class="w-12 h-12 rounded-full p-2 flex justify-center items-center bg-gray-100">
-                            <i class="fab fa-facebook text-blue-600 text-2xl"></i>
+                            <i class="fab fa-facebook text-2xl"></i>
                         </button>
                         <button class="w-12 h-12 rounded-full p-2 flex justify-center items-center bg-gray-100">
-                            <i class="fab fa-apple text-gray-800 text-2xl"></i>
+                            <i class="fab fa-apple text-2xl"></i>
                         </button>
                     </div>
                 </div>
-                <button class="w-full bg-black text-white py-4 rounded-full mb-6">Continue as Guest</button>
+                <button class="w-full bg-[#6a1b9a] text-white py-4 rounded-full mb-6">Continue as Guest</button>
                 <p class="text-center text-sm text-white">Don't have an account? <a href="#" class="text-white underline">Sign Up</a></p>
             </form>
         </div>

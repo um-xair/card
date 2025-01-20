@@ -14,7 +14,7 @@
             transition: background-color 0.3s, color 0.3s;
         }
         body.dark-mode {
-            background: linear-gradient(to bottom right, #1e3a8a, #000000, #1e3a8a);
+            background: linear-gradient(to bottom right, #0A0A0A, #232323, #0A0A0A);
             color: #e5e7eb;
         }
         .profile-card {
@@ -29,15 +29,24 @@
             transition: background-color 0.3s, color 0.3s;
         }
         body.dark-mode .profile-card {
-            background: linear-gradient(to bottom right, #1e3a8a, #000000, #1e3a8a);
+            background: #0A0A0A;
+        }
+        body.dark-mode .profile-card h2,
+        body.dark-mode .profile-card h4,
+        body.dark-mode .profile-card p {
+            color: #e5e7eb; 
         }
         body.dark-mode .hire-me-btn {
-            background: linear-gradient(to right, #2b6cb0, #000000, #6b46c1);
+            background: #e5e7eb;
+            color: #000;
+        }
+        body.dark-mode .text-black {
+            color: #e5e7eb;
         }
         .theme-icon {
             position: absolute;
-            top: 15px;
-            right: 15px;
+            top: 25px;
+            right: 25px;
             cursor: pointer;
             font-size: 1.5rem;
             color: #333;
@@ -56,32 +65,32 @@
         </div>
         <div class="space-y-4">
             <img src="https://i.pinimg.com/736x/a9/ef/ac/a9efacd245f2ac4c39502b3f28f1838e.jpg" alt="Profile Picture" class="w-36 h-36 rounded-full mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 text-center">DEVXAIR</h2>
-            <h4 class="text-md text-gray-600 text-center">Front End Developer</h4>
-            <p class="text-gray-600 text-xs text-center">Experienced in front-end and back-end development, creating stunning and functional web experiences.</p>
-            <a href="#" class="bg-[#232323] text-white rounded-full inline-block mx-auto mt-4 w-full py-4">Hire Me</a>
+            <h2 class="text-3xl font-bold text-black text-center">DEVXAIR</h2>
+            <h4 class="text-md text-black text-center">Front End Developer</h4>
+            <p class="text-black text-xs text-center">Experienced in front-end and back-end development, creating stunning and functional web experiences.</p>
+            <a href="#" class="hire-me-btn bg-black text-white rounded-full inline-block mx-auto mt-4 w-full py-4">Hire Me</a>
         </div>
         
         <div class="flex justify-between mt-6">
             <div class="text-center">
                 <i class="fab fa-facebook-f text-2xl text-black mb-1"></i>
-                <p class="text-sm text-gray-700">500</p>
-                <small class="text-xs text-gray-500">Follower</small>
+                <p class="text-sm text-black">500</p>
+                <small class="text-xs text-black">Follower</small>
             </div>
             <div class="text-center">
                 <i class="fab fa-instagram text-2xl text-black mb-1"></i>
-                <p class="text-sm text-gray-700">300</p>
-                <small class="text-xs text-gray-500">Follower</small>
+                <p class="text-sm text-black">300</p>
+                <small class="text-xs text-black">Follower</small>
             </div>
             <div class="text-center">
                 <i class="fab fa-tiktok text-2xl text-black mb-1"></i>
-                <p class="text-sm text-gray-700">1.2K</p>
-                <small class="text-xs text-gray-500">Follower</small>
+                <p class="text-sm text-black">1.2K</p>
+                <small class="text-xs text-black">Follower</small>
             </div>
             <div class="text-center">
                 <i class="fab fa-github text-2xl text-black mb-1"></i>
-                <p class="text-sm text-gray-700">900</p>
-                <small class="text-xs text-gray-500">Follower</small>
+                <p class="text-sm text-black">900</p>
+                <small class="text-xs text-black">Follower</small>
             </div>
         </div>
     </div>

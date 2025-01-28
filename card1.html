@@ -28,12 +28,13 @@
     </style>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('assets/white.jpg');">
-
-    <div id="login-card" class="backdrop-blur-md bg-white/30 rounded-[30px] shadow-lg p-8 w-[95%] sm:w-full max-w-sm border border-white/20 flip-vertical-right-normal">
+    
+    <div class="absolute inset-0 bg-black opacity-[40%]"></div>
+    <div id="login-card" class="backdrop-blur-md bg-white/30 rounded-[30px] shadow-lg p-8 w-[95%] sm:w-full max-w-sm border-white/20 flip-vertical-right-normal">
         <h2 class="text-3xl sm:text-4xl font-bold text-center">Login</h2>
         <form class="mt-6">
             <div class="mb-4">
-                <label for="username" class="block mb-2 text-sm sm:text-base">Username</label>
+                <label for="username" class="block mb-1 text-sm sm:text-base">Username</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-4">
                         <i class="fas fa-user text-gray-900 text-lg"></i>
@@ -48,7 +49,7 @@
                 </div>
             </div>
             <div class="mb-4">
-                <label for="password" class="block mb-2 text-sm sm:text-base">Password</label>
+                <label for="password" class="block mb-1 text-sm sm:text-base">Password</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-4">
                         <i class="fas fa-lock text-gray-900 text-lg"></i>
@@ -67,11 +68,11 @@
         <p class="mt-4 text-sm text-center">Don't have an account? <a href="#" onclick="flipToRegister()" class="text-black font-semibold underline">Sign Up</a></p>
     </div>
 
-    <div id="register-card" class="hidden backdrop-blur-md bg-white/30 rounded-[30px] shadow-lg p-8 w-[95%] sm:w-full max-w-sm border border-white/20 flip-vertical-right-normal">
+    <div id="register-card" class="hidden backdrop-blur-md bg-white/30 rounded-[30px] shadow-lg p-8 w-[95%] sm:w-full max-w-sm border-white/20 flip-vertical-right-normal">
         <h2 class="text-3xl sm:text-4xl font-bold text-center">Register</h2>
         <form class="mt-6">
             <div class="mb-4">
-                <label for="new-username" class="block mb-2 text-sm sm:text-base">Username</label>
+                <label for="new-username" class="block mb-1 text-sm sm:text-base">Username</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-4">
                         <i class="fas fa-user text-gray-900 text-lg"></i>
@@ -86,7 +87,7 @@
                 </div>
             </div>
             <div class="mb-4">
-                <label for="new-email" class="block mb-2 text-sm sm:text-base">Email</label>
+                <label for="new-email" class="block mb-1 text-sm sm:text-base">Email</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-4">
                         <i class="fas fa-envelope text-gray-900 text-lg"></i>
@@ -101,7 +102,7 @@
                 </div>
             </div>
             <div class="mb-4">
-                <label for="new-password" class="block mb-2 text-sm sm:text-base">Password</label>
+                <label for="new-password" class="block mb-1 text-sm sm:text-base">Password</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-4">
                         <i class="fas fa-lock text-gray-900 text-lg"></i>
@@ -116,7 +117,7 @@
                 </div>
             </div>
             <div class="mb-4">
-                <label for="confirm-password" class="block mb-2 text-sm sm:text-base">Confirm Password</label>
+                <label for="confirm-password" class="block mb-1 text-sm sm:text-base">Confirm Password</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-4">
                         <i class="fas fa-lock text-gray-900 text-lg"></i>

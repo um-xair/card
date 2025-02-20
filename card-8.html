@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R4XN | Project</title>
+    <link rel="icon" href="assets/r4xn-black.png" type="image/png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#0A0A0A] via-[#232323] to-[#0A0A0A] flex justify-center items-center min-h-screen px-6">
+    <div class="relative w-[500px] h-[500px] rounded-[30px] overflow-hidden shadow-xl transition-transform duration-500 hover:scale-105 cursor-pointer group">
+        <div class="absolute inset-0 z-20 bg-black transition-transform duration-500 transform group-hover:-translate-y-20">
+            <img src="https://i.pinimg.com/736x/f8/f7/da/f8f7da401b73382923b56f3ae2b41ea9.jpg" alt="profile one" class="w-full h-full object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-40">
+        </div>
+        <ul class="absolute inset-0 flex items-center justify-center z-30 space-x-4 transform translate-y-40 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+            <li><a href="#" class="w-12 h-12 bg-white text-black flex items-center justify-center rounded-full"><i class="fab fa-facebook-f text-2xl"></i></a></li>
+            <li><a href="#" class="w-12 h-12 bg-white text-black flex items-center justify-center rounded-full"><i class="fab fa-instagram text-2xl"></i></a></li>
+            <li><a href="#" class="w-12 h-12 bg-white text-black flex items-center justify-center rounded-full"><i class="fab fa-twitter text-2xl"></i></a></li>
+            <li><a href="#" class="w-12 h-12 bg-white text-black flex items-center justify-center rounded-full"><i class="fab fa-github text-2xl"></i></a></li>
+        </ul>
+        <div class="absolute bottom-0 left-0 w-full bg-white p-4 z-10 transform translate-y-20 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+            <h2 class="text-3xl font-semibold ml-4">R4XN</h2>
+            <p class="text-black text-sm ml-4">Full Stack Developer</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R4XN | Project</title>
+    <link rel="icon" href="assets/r4xn-black.png" type="image/png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://i.pinimg.com/originals/a4/dd/24/a4dd2498fc11d44d9d4a43dd1f0ff7c0.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .blur-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            filter: blur(80px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-6">
+
+    <div class="blur-bg bg-white shadow-lg overflow-hidden relative w-full max-w-4xl rounded-[30px]">
+        <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col justify-center items-center bg-white p-8 w-full md:w-1/2 relative">
+                <img src="../assets/r4xn-black.png" alt="Logo" class="mb-4 w-32 rounded-full">
+                <h2 class="text-2xl font-bold mb-4 text-black">Create Account</h2>
+                <form class="w-full space-y-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Full Name" class="border border-gray-300 p-3 rounded-[15px] w-full pr-12 focus:ring-2 focus:ring-amber-400 focus:outline-none" required>
+                        <i class="fa fa-user absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>                  
+                    <div class="relative">
+                        <input type="email" placeholder="Email" class="border border-gray-300 p-3 rounded-[15px] w-full pr-12 focus:ring-2 focus:ring-amber-400 focus:outline-none" required>
+                        <i class="fa fa-envelope absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>                   
+                    <div class="relative">
+                        <input type="password" placeholder="Password" class="border border-gray-300 p-3 rounded-[15px] w-full pr-12 focus:ring-2 focus:ring-amber-400 focus:outline-none" required>
+                        <i class="fa fa-lock absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>          
+                    <button type="submit" class="bg-gradient-to-r from-amber-500 to-pink-500 text-white font-semibold py-4 rounded-[30px] w-full">
+                        Register
+                    </button>
+                </form>                
+                <p class="mt-4 text-sm text-gray-600">Already have an account? <a href="#" class="text-blue-500 underline">Sign In</a></p>
+            </div>
+
+            <div class="w-full md:w-1/2">
+                <img src="../assets/card.jpg" alt="Registration" class="object-cover h-full w-full md:h-full md:w-full">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -3,27 +3,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form Template by DEVXAIR</title>
+    <title>R4XN | Project</title>
+    <link rel="icon" href="../assets/r4xn-black.png" type="image/png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .customfont {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .animate-gradient-moving {
+            background-size: 200% 200%;
+            animation: gradientMove 6s linear infinite;
+        }
+    </style>
 </head>
-<body>
-    <div>
-        <h2>Login</h2>
-        <form>
-            <div>
-                <label for="username">Username</label>
-                <div>
-                    <input type="text" id="username" placeholder="Enter your username" required="">
+<body class="pt-10 fade-in bg-black">
+
+    <div class="flex justify-center text-white">
+        <header id="header" class="w-[90%] lg:w-[85%] flex flex-col items-center justify-between px-6 py-4 lg:rounded-full rounded-[30px] backdrop-filter backdrop-blur-sm bg-opacity-10 fixed z-[999] transition-opacity duration-500">
+            <div class="flex items-center w-full justify-between">
+                <div class="flex items-center">
+                    <div class="ml-3">
+                        <h1 class="text-lg font-semibold">R4XN</h1>
+                        <p class="text-sm text-gray-400">Project Hub</p>
+                    </div>
                 </div>
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <a href="#home" class="text-md">Home</a>
+                    <a href="#features" class="text-md">Features</a>
+                    <a href="#explore" class="text-md">Explore</a>
+                    <div class="relative">
+                        <button id="desktop-tools-btn" class="text-md flex items-center space-x-2">
+                            <span>Tools</span>
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <div id="desktop-tools-menu" class="absolute right-0 mt-2 w-[750px] bg-[#0A0A0A] text-white rounded-[20px] shadow-lg hidden p-4">
+                            <div class="grid grid-cols-3 w-full">
+                                <a href="#" class="block p-3 hover:bg-neutral-900 rounded-md transition-all duration-300">
+                                    <h3 class="text-md font-semibold">Tailwind CSS Gradient</h3>
+                                    <p class="text-xs text-gray-400">Vibrant multi-color gradients for web.</p>
+                                </a>
+                                <a href="#" class="block p-3 hover:bg-neutral-900 rounded-md transition-all duration-300">
+                                    <h3 class="text-md font-semibold">Tailwind CSS Card</h3>
+                                    <p class="text-xs text-gray-400">Stylish modern, adaptive card layouts.</p>
+                                </a>
+                                <a href="#" class="block p-3 hover:bg-neutral-900 rounded-md transition-all duration-300">
+                                    <h3 class="text-md font-semibold">Color Pallete</h3>
+                                    <p class="text-xs text-gray-400">Design custom color combinations easily.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#about" class="text-md">About</a>
+                </nav>
+                <button class="lg:hidden text-white" id="menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <div>
-                    <input type="password" id="password" placeholder="Enter your password" required="">
-                </div>
+    
+            <div class="w-full mt-4 backdrop-blur-lg bg-opacity-10 text-white hidden" id="mobile-menu">
+                <nav class="flex flex-col space-y-4 py-4">
+                    <a href="#home" class="text-md">Home</a>
+                    <a href="#features" class="text-md py-2">Features</a>
+                    <a href="#explore" class="text-md py-2">Explore</a>
+                    <div class="relative">
+                        <button id="mobile-tools-btn" class="text-md flex items-center space-x-1 py-2">
+                            <span>Tools</span>
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <div id="mobile-tools-menu" class="hidden flex flex-col space-y-2 bg-[#0A0A0A] text-white p-2 rounded-md">
+                            <a href="#" class="text-sm py-2 block hover:bg-neutral-900 p-4">Tailwind CSS Gradient</a>
+                            <a href="#" class="text-sm py-2 block hover:bg-neutral-900 p-4">Tailwind CSS Card</a>
+                            <a href="#" class="text-sm py-2 block hover:bg-neutral-900 p-4">Color Palette</a>
+                        </div>
+                    </div>
+                    <a href="#about" class="text-md py-2">About</a>
+                </nav>
             </div>
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </header>
     </div>
+    
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    
+        document.getElementById("mobile-tools-btn").addEventListener("click", function () {
+            document.getElementById("mobile-tools-menu").classList.toggle("hidden");
+        });
+    
+        const toolsBtn = document.getElementById("desktop-tools-btn");
+        const toolsMenu = document.getElementById("desktop-tools-menu");
+    
+        toolsBtn.addEventListener("click", function (event) {
+            event.stopPropagation(); 
+            toolsMenu.classList.toggle("hidden");
+        });
+    
+        toolsMenu.addEventListener("click", function (event) {
+            event.stopPropagation();
+        });
+    
+        document.addEventListener("click", function (event) {
+            if (!toolsMenu.classList.contains("hidden") && event.target !== toolsBtn) {
+                toolsMenu.classList.add("hidden");
+            }
+        });
+    
+        const header = document.getElementById("header");
+        let lastScrollY = window.scrollY;
+    
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                header.style.opacity = "0";
+            } else {
+                header.style.opacity = "1";
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+
+    <main id="home" class="min-h-screen w-full flex items-center justify-center bg-cover bg-center text-white px-4" 
+        style="background-image: url('../assets/abstract-lines-dark-4k-mg.jpg');">
+        <div class="lg:mt-10 container max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8">
+            <div class="text-center md:text-left md:w-1/2">
+                <p class="text-lg mb-3">Enter the Future Project</p>
+                <h1 class="text-4xl lg:text-7xl font-bold leading-tight">Tailwind CSS Card</h1>
+                <p class="text-lg mb-3">
+                    Simplify your workflow with our intuitive and powerful tools designed to keep you ahead.
+                </p>
+                <div class="mt-8">
+                    <a href="#explore" class="px-6 py-4 w-full lg:w-2/5 bg-white text-black text-center rounded-full inline-block">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center md:w-1/2">
+                <img src="../assets/card-hero.png" alt="DevXAir Developer Tools" 
+                   class="w-full md:w-3/4 lg:w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </main>
+
+    <section class="relative bg-black h-60 overflow-hidden flex flex-col items-center justify-center">
+        <div class="absolute inset-0">
+            <svg class="w-full h-auto absolute -top-32 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient-fill-top" gradientTransform="rotate(90)">
+                        <stop offset="0%" stop-color="#0F0F0F" />
+                        <stop offset="100%" stop-color="black" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,200 C600,100 840,100 1440,200L1440,320L0,320Z" fill="url(#gradient-fill-top)"></path>
+            </svg>
+        </div>
+        <div class="absolute inset-0">
+            <svg class="w-full h-auto absolute -top-16 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient-fill-bottom" gradientTransform="rotate(90)">
+                        <stop offset="0%" stop-color="#0F0F0F" />
+                        <stop offset="100%" stop-color="black" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,240 C600,160 840,160 1440,240L1440,320L0,320Z" fill="url(#gradient-fill-bottom)"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="text-white min-h-screen bg-black flex flex-col items-center justify-center py-20 px-6">
+        <div class="max-w-6xl text-center">
+            <h2 class="text-4xl lg:text-7xl font-bold mb-6">
+                About Our Design Approach
+            </h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Our design philosophy is rooted in creating sleek, intuitive, and highly functional layouts.  
+                Leveraging the power of <span class="bg-gradient-to-r from-blue-600 to-violet-600 font-semibold">Tailwind CSS</span>,  
+                we craft modern UI components, including <span class="bg-gradient-to-r from-blue-600 to-violet-600 font-semibold">flexible card templates</span> that enhance user experience across all devices.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed mt-6">
+                Our card-based layouts provide a structured, aesthetic, and customizable solution for showcasing content effectively.  
+                Whether you're designing for business, e-commerce, or a personal portfolio, our templates are built for scalability and performance.
+            </p>
+            <div class="mt-10 flex justify-center">
+                <a href="#features" class="w-full sm:w-2/5 px-6 py-4 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-lg text-white text-center">
+                    Explore Features
+                </a>
+            </div>            
+        </div>
+    </section>
+    
+    <section id="features" class="text-white min-h-screen bg-black flex flex-col items-center justify-center py-20">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
+            <div class="relative flex flex-col items-center">
+                <p class="text-lg mb-3 text-white max-w-3xl">
+                    Explore the unique capabilities that will elevate your experience.
+                </p>
+                <h2 class="text-white text-4xl lg:text-7xl font-bold">
+                    Our Amazing Features
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                <div class="relative bg-[#0c0c0c] border border-gray-700 rounded-[30px] overflow-hidden flex flex-col items-center p-6">
+                    <div class="w-52 flex justify-center items-center mb-4">
+                        <img src="../assets/feature-1.png" alt="Feature 1" class="object-contain w-auto h-auto max-w-full max-h-full">
+                    </div>
+                    <h3 class="text-lg lg:text-xl font-semibold text-white mb-2">Sleek Design</h3>
+                    <p class="text-gray-300 text-sm text-center">
+                        A modern and minimalistic look that aligns with current UI trends.
+                    </p>
+                </div>
+                <div class="relative bg-[#0c0c0c] border border-gray-700 rounded-[30px] overflow-hidden flex flex-col items-center p-6">
+                    <div class="w-52 flex justify-center items-center mb-4">
+                        <img src="../assets/feature-2.png" alt="Feature 2" class="object-contain w-auto h-auto max-w-full max-h-full">
+                    </div>
+                    <h3 class="text-lg lg:text-xl font-semibold text-white mb-2">Responsive Layout</h3>
+                    <p class="text-gray-300 text-sm text-center">
+                        Ensures optimal viewing across all devices, including mobile, tablet, and desktop.
+                    </p>
+                </div>
+                <div class="relative bg-[#0c0c0c] border border-gray-700 rounded-[30px] overflow-hidden flex flex-col items-center p-6">
+                    <div class="w-52 flex justify-center items-center mb-4">
+                        <img src="../assets/feature-3.png" alt="Feature 3" class="object-contain w-auto h-auto max-w-full max-h-full">
+                    </div>
+                    <h3 class="text-lg lg:text-xl font-semibold text-white mb-2">Captivating Background</h3>
+                    <p class="text-gray-300 text-sm text-center">
+                        Engaging and visually appealing background images or animations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-black h-60 overflow-hidden flex flex-col items-center justify-center">
+        <div class="absolute inset-0">
+            <svg class="w-full h-auto absolute -top-32 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient-fill-top" gradientTransform="rotate(90)">
+                        <stop offset="0%" stop-color="#0F0F0F" />
+                        <stop offset="100%" stop-color="black" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,200 C600,100 840,100 1440,200L1440,320L0,320Z" fill="url(#gradient-fill-top)"></path>
+            </svg>
+        </div>
+        <div class="absolute inset-0">
+            <svg class="w-full h-auto absolute -top-16 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient-fill-bottom" gradientTransform="rotate(90)">
+                        <stop offset="0%" stop-color="#0F0F0F" />
+                        <stop offset="100%" stop-color="black" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,240 C600,160 840,160 1440,240L1440,320L0,320Z" fill="url(#gradient-fill-bottom)"></path>
+            </svg>
+        </div>
+    </section>
+    
+    <section id="explore" class="text-white py-20 min-h-screen flex flex-col items-center justify-center">
+        <div class="max-w-screen-2xl mx-auto px-6 mt-20">
+            <div class="relative flex flex-col items-center">
+                <p class="text-lg mb-3 text-white max-w-3xl">
+                    let's get started.
+                </p>
+                <h2 class="text-white text-4xl lg:text-7xl font-bold">
+                    Explore The Cards
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 mt-10">
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="w-full">
+                        <video autoplay loop muted class="w-full aspect-video object-cover">
+                            <source src="../assets/card-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">A sleek and user-friendly login card design for easy access.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-1.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="w-full">
+                        <video autoplay loop muted class="w-full aspect-video object-cover">
+                            <source src="../assets/card-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">A sleek and user-friendly login card design for easy access.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-2.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="w-full">
+                        <img src="../assets/card-3.jpg" alt="Login card by R4XN Preview" class="w-full aspect-video object-cover">
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">A sleek and user-friendly login card design for easy access.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-3.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-4 mt-10">
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="relative w-full h-96 overflow-hidden mb-4">
+                        <video autoplay loop muted class="w-full h-full object-cover">
+                            <source src="../assets/card-4.MP4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">lorem5</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-4.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="relative w-full h-96 overflow-hidden mb-4">
+                        <video autoplay loop muted class="w-full h-full object-cover">
+                            <source src="../assets/card-5.MP4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">A sleek and user-friendly login card design for easy access.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-5.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 mt-10">
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="w-full">
+                        <video autoplay loop muted class="w-full aspect-video object-cover">
+                            <source src="../assets/card-6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">A sleek and user-friendly login card design for easy access.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-6.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="w-full">
+                        <video autoplay loop muted class="w-full aspect-video object-cover">
+                            <source src="../assets/card-7.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">A sleek and user-friendly login card design for easy access.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-7.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#0c0c0c] overflow-hidden">
+                    <div class="w-full">
+                        <video autoplay loop muted class="w-full aspect-video object-cover">
+                            <source src="../assets/card-8.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="text-white p-6">
+                        <h4 class="text-xl font-semibold mb-2">Login card by R4XN</h4>
+                        <p class="mb-4 text-sm">A sleek and user-friendly login card design for easy access.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 flex items-center justify-center">
+                            <a href="../card/card-8.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] w-full text-center">Preview</a>
+                            <a href="#" target="_blank" class="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-4 px-4 rounded-[15px] flex items-center justify-center">
+                                <i class="fab fa-github mr-2 text-xl"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex justify-between w-full lg:px-20 px-10 py-4 text-md text-white">
+        <p>ALL RIGHTS RESERVED</p>
+        <p id="year">R4XN <span id="currentYear"></span></p>
+    </footer>
+    
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>

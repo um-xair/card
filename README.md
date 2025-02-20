@@ -25,13 +25,14 @@ Check it out here: [Tailwind CSS Card](https://e-flower.netlify.app/)
 
 ## Components Overview
 
-| Title         | Image |
-|---------------|-------|
-| Login Card 1  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-1.jpg" alt="Login Card" width="100%"> |
-| Login Card 2  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-2.jpg" alt="Login Card" width="100%"> |
-| Login Card 3  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-3.jpg" alt="Login Card" width="100%"> | 
-| Login Card 4  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-4.jpg" alt="Login Card" width="100%"> |
-| Login Card 5  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-5.jpg" alt="Login Card" width="100%"> |
-| Login Card 6  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-6.jpg" alt="Login Card" width="100%"> | 
-| Login Card 7  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-7.jpg" alt="Login Card" width="100%"> | 
-| Login Card 8  | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-8.jpg" alt="Login Card" width="100%"> |
+| Title               | Image |
+|---------------------|-------|
+| **Login Card 1**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-1.jpg" alt="Login Card" width="100%"> |
+| **Login Card 2**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-2.jpg" alt="Login Card" width="100%"> |
+| **Login Card 3**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-3.jpg" alt="Login Card" width="100%"> | 
+| **Login Card 4**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-4.jpg" alt="Login Card" width="100%"> |
+| **Login Card 5**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-5.jpg" alt="Login Card" width="100%"> |
+| **Login Card 6**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-6.jpg" alt="Login Card" width="100%"> | 
+| **Login Card 7**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-7.jpg" alt="Login Card" width="100%"> | 
+| **Login Card 8**    | <img src="https://github.com/um-xair/card/blob/main/assets/main-card-8.jpg" alt="Login Card" width="100%"> |
+

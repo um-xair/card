@@ -7,7 +7,7 @@
 – A sleek and responsive card component built with Tailwind CSS. Perfect for displaying content in a clean and modern layout.
 
 ## Live Demo  
-Check it out here: [Tailwind CSS Card](https://e-flower.netlify.app/)  
+Check it out here: [Tailwind CSS Card](https://r4xn.netlify.app/card.html)  
 
 ## Features
 - Fully responsive design
